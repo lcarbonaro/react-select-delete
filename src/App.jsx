@@ -16,7 +16,7 @@ function App() {
     
 
     async function doFetch() {
-      let resp = await fetch('http://localhost:3000/test');
+      let resp = await fetch('http://localhost:3000/catbots');
       let respJson = await resp.json();
       //console.log(respJson);
       setData(respJson);      
@@ -41,16 +41,13 @@ function App() {
 
   async function handleDelete(id) {
     //console.log(`in handleDelete id: ${id}`);
-
     handleRemove(id);
-
     await deleteRecord(id);
-    setRefresh( prevRefresh => !prevRefresh );
-    
+    setRefresh( prevRefresh => !prevRefresh );    
   }
 
   async function deleteRecord(id) {
-    let resp = await fetch(`http://localhost:3000/test/${id}`,{
+    let resp = await fetch(`http://localhost:3000/catbots/${id}`,{
       method: "DELETE"
     });    
   }
@@ -59,12 +56,9 @@ function App() {
   return (
     <>
      <div id="divMain">
-      <Collection data={data} handleSelect={handleSelect} />
-      <Selection selData={selData} handleRemove={handleRemove} handleDelete={handleDelete}/>
+      <Collection data={data} handleClick={handleSelect} />
+      <Selection selData={selData} handleClick={handleRemove} handleDelete={handleDelete}/>
      </div>
-
-     
-
     </>
   )
 }

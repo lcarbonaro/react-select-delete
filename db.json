@@ -1,7 +1,29 @@
 {
-  "test": [
-    {"id":1,"msg":"hello world"},
-    {"id":2,"msg":"hi there"},
-    {"id":3,"msg":"hey again"}
+  "catbots": [
+    {
+      "id": 2,
+      "name": "Boots",
+      "avatar_url": "https://robohash.org/Xs9MMZCJ8eqyCjVKL5lh.png?size=100x100&set=set4"
+    },
+    {
+      "id": 3,
+      "name": "Chubbs",
+      "avatar_url": "https://robohash.org/ZyPPg3pnYhCV3cCZsqa4.png?size=100x100&set=set4"
+    },
+    {
+      "id": 5,
+      "name": "Elsa",
+      "avatar_url": "https://robohash.org/4QPkaC23764gdftye67234ghdft5G4K.png?size=100x100&set=set4"
+    },
+    {
+      "id": 1,
+      "name": "Mittens",
+      "avatar_url": "https://robohash.org/4QPkaCTsdlkdsod1232vndfgh4K.png?size=100x100&set=set4"
+    },
+    {
+      "id": 4,
+      "name": "Bugsy",
+      "avatar_url": "https://robohash.org/4QPkawporepro348398439ufjnvm4K.png?size=100x100&set=set4"
+    }
   ]
 }

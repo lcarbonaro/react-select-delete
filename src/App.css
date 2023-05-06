@@ -13,13 +13,23 @@ body {
 
 #divCollect {
   border: 1px solid red;
+  padding: 10px;
 }
 
 #divSelect {
   border: 1px solid blue;
+  padding: 10px;
 }
 
-button.red {
+.red {
   margin-left: 10px;
   color:red;
+}
+
+.divCard {
+  border: 1px solid wheat;
+  border-radius: 2%;
+  padding: 10px;
+  margin: 5px;
+  width:200px;
 }
