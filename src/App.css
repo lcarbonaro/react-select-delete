@@ -7,6 +7,7 @@ body {
 #divMain {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-column-gap: 20px;
   width:100vw;
   height:100vh;
 }
@@ -21,6 +22,13 @@ body {
   padding: 10px;
 }
 
+#divCollect > div , #divSelect > div {
+  display: grid;
+  grid-template-columns: repeat(4,150px);
+  grid-column-gap: 20px;
+  grid-row-gap: 10px;
+}
+
 .red {
   margin-left: 10px;
   color:red;
@@ -28,8 +36,10 @@ body {
 
 .divCard {
   border: 1px solid wheat;
-  border-radius: 2%;
-  padding: 10px;
-  margin: 5px;
-  width:200px;
+  border-radius: 2%;    
+  padding: 5px;
+  width:150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

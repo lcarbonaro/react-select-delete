@@ -16,9 +16,11 @@ function Collection({ data, handleClick }) {
 
   return (
     <div id="divCollect">
-      <h4>All Items</h4>
+      <h4>All Kitties</h4>
       <p>Click to Select.</p>
+      <div>
       {makeList()}
+      </div>
     </div>
   );
 }

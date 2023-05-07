@@ -31,13 +31,15 @@ function Selection({ selData, handleClick, handleDelete }) {
 
   return (
     <div id="divSelect">
-      <h4>Selected Items</h4>
+      <h4>Selected Kitties</h4>
       {selData.length > 0 ? (
         <p>Click to Un-Select. Click X to Delete forever.</p>
       ) : (
         <br />
       )}
+      <div>
       {makeList()}
+      </div>
     </div>
   );
 }
